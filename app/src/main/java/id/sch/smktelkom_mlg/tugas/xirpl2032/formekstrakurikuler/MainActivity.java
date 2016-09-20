@@ -139,6 +139,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         if (isChecked) nEkstra += 1;
         else nEkstra -= 1;
 
-        tvEkstra.setText("Ekstrakurikuler (" + nEkstra + " terpilih)");
+        tvEkstra.setText("Ekstrakurikuler (" + nEkstra + "yang terpilih)");
     }
 }

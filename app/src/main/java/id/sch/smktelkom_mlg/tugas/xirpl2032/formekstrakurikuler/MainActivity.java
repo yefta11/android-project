@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     CheckBox cbBasket, cbVoli, cbFutsal, cbPaduanSuara;
     int nEkstra;
     Spinner spKelas, spJurusan;
-    String[][] arJurusan = {{"RPL 1", "RPL 2", "RPL 3", "RPL 4","RPL 5","RPL 6", "TKJ 1", "TKJ 2", "TKJ 3"},
-            {"RPL 1", "RPL 2", "RPL 3","RPL 4", "TKJ 1", "TKJ 2"},
-            {"RPL 1", "RPL 2", "RPL 3", "TKJ 1", "TKJ 2"}};
+    String[][] arJurusan = {{"RPL 1", "RPL 2", "RPL 3", "TKJ 1", "TKJ 2", "TKJ 3"},
+            {"RPL 1", "RPL 2", "RPL 3", "TKJ 1", "TKJ 2"},
+            {"RPL 1", "RPL 2", "TKJ 1", "TKJ 2"}};
     ArrayList<String> listJurusan = new ArrayList<>();
     ArrayAdapter<String> adapter;
 
@@ -139,6 +139,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         if (isChecked) nEkstra += 1;
         else nEkstra -= 1;
 
-        tvEkstra.setText("Ekstrakurikuler (" + nEkstra + "yang terpilih)");
+        tvEkstra.setText("Ekstrakurikuler (" + nEkstra + "terpilih)");
     }
 }

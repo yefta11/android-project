@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         if (cbFutsal.isChecked()) ekstra += cbFutsal.getText() + " \n";
         if (cbPaduanSuara.isChecked()) ekstra += cbPaduanSuara.getText() + " \n";
 
-        if (ekstra.length() == startlen) ekstra += "Anda Belum memilih EkstraKurikuler!";
+        if (ekstra.length() == startlen) ekstra += "Anda Belum memilih Ekstrakurikuler!";
 
         tvHasil3.setText(ekstra);
 
